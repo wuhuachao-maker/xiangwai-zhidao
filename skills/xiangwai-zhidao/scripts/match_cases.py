@@ -22,7 +22,7 @@ def tokens(text):
     return result
 
 
-def search_cases(query, include_demo=False):
+def search_cases(query, include_demo=False, include_provisional=False):
     query_tokens = tokens(query)
     results = []
     for path in DATA.glob('*.jsonl'):
@@ -31,6 +31,8 @@ def search_cases(query, include_demo=False):
                 continue
             item = json.loads(row)
             if item['evidence_status'] == 'fictional' and not include_demo:
+                continue
+            if item['evidence_status'] == 'provisional' and not include_provisional:
                 continue
             haystack = ' '.join([item.get('title',''),item.get('domain',''),item.get('scenario',''),item.get('goal',''),item.get('visible_side',''),item.get('hidden_side','')] + item.get('tags',[]))
             overlap = query_tokens & tokens(haystack)
@@ -44,8 +46,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='象外之道案例粗筛（仅线索，不代表概率）')
     parser.add_argument('query',help='描述问题，例如：AI 视频流量差')
     parser.add_argument('--include-demo',action='store_true',help='包括虚构演示案例；不可当作事实证据')
+    parser.add_argument('--include-provisional',action='store_true',help='包括待核线索；不得作为已核验证据')
     args = parser.parse_args()
-    matches = search_cases(args.query,include_demo=args.include_demo)
+    matches = search_cases(args.query,include_demo=args.include_demo,include_provisional=args.include_provisional)
     if not matches:
         print('当前没有可用于真实证据匹配的案例。请先录入经过来源核验的真实案例；若仅测试格式可加 --include-demo。')
     for score,case in matches[:5]:

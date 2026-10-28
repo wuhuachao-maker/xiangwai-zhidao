@@ -1,0 +1,52 @@
+{
+  "knowledge_version": "2026-10-28-batch02",
+  "skill_version_unchanged": "0.1.2",
+  "as_of": "2026-10-28",
+  "counts": {
+    "real_case_and_policy_records": 20,
+    "verified_case_and_policy_records": 18,
+    "provisional_case_records": 2,
+    "policy_statements": 2,
+    "thought_cards": 8,
+    "verified_thought_cards": 6,
+    "provisional_thought_cards": 2,
+    "provisional_comparison_cards": 4,
+    "source_records": 28,
+    "fictional_demo_cases_excluded": 2
+  },
+  "default_search": "verified only; fictional excluded; comparisons require --include-provisional",
+  "verification_meaning": "AI辅助来源核读，非独立人工审核、原始数据审计或因果证明",
+  "plugin_sync_status": "GitHub数据更新不自动同步已安装ChatGPT插件",
+  "files": [
+    {
+      "path": "skills/xiangwai-zhidao/data/cases/demo.jsonl",
+      "records": 2,
+      "sha256": "4b23190683f4928a351f02249aeb4dc77f66856f5f6cdd63cecf7d0268b257da"
+    },
+    {
+      "path": "skills/xiangwai-zhidao/data/cases/research-2026-10-batch02.jsonl",
+      "records": 12,
+      "sha256": "65639d75ab5f373addc7d5f3a7d6cb79f3230b9fbddf135347279b6b7df8b81f"
+    },
+    {
+      "path": "skills/xiangwai-zhidao/data/cases/verified-2026-10-batch01.jsonl",
+      "records": 8,
+      "sha256": "979a66f0f847e8d02a5bb5b9bf37880883c433fe23c5d5f07a8dc12c60eaf9fb"
+    },
+    {
+      "path": "skills/xiangwai-zhidao/data/thoughts/research-2026-10-batch02.jsonl",
+      "records": 8,
+      "sha256": "1d09f81c50595a899c3a7cf97b1f007b0c1c234df747b4c3a2596c644726bebf"
+    },
+    {
+      "path": "skills/xiangwai-zhidao/data/comparisons/research-2026-10-batch02.jsonl",
+      "records": 4,
+      "sha256": "93608536d9e7934f68196461f76b31781e484acf4a39b246b225d134486eebd4"
+    },
+    {
+      "path": "skills/xiangwai-zhidao/data/sources/reviewed-2026-10-batch02.jsonl",
+      "records": 28,
+      "sha256": "bd6001118023b0f29fdc2cc87ffe89a86bf0c4c3a0cac8c36cc473e8ab6a94a4"
+    }
+  ]
+}
