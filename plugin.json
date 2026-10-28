@@ -1,26 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "xiangwai-zhidao",
+  "version": "0.1.2",
+  "description": "【老吴】象外之道：以定果、观局、寻根、定策为统一内核，寻找卡点背后的互根关系与行动对岸。以人物思想、历史案例、实时数据作为证据而非替代内核。",
   "author": {
-    "email": "wuhuachaog@gmail.com",
     "name": "老吴"
   },
-  "description": "【老吴】象外之道：以定果、观局、寻根、定策为统一内核，寻找卡点背后的互根关系与行动对岸。以人物思想、历史案例、实时数据作为证据而非替代内核。",
-  "extensions": {
-    "com.openai": {
-      "interface": {
-        "category": "Productivity",
-        "defaultPrompt": [
-          "用象外之道帮我分析当前最重要的卡点，并给出下一步行动。",
-          "我面临两个选择，按定果、观局、寻根、定策帮我判断。",
-          "帮我寻找这个商业问题尚未看见的对岸，并验证关键假设。"
-        ],
-        "developerName": "老吴",
-        "displayName": "【老吴】象外之道",
-        "longDescription": "以老吴原创《象外之道》为统一认知体系，通过定果、观局、寻根、定策，结合生态法则与探岸法，为商业、职业、组织和个人决策寻找隐藏条件与可执行行动。外部人物思想和案例仅作验证资料。",
-        "shortDescription": "老吴原创认知决策引擎：定果、观局、寻根、定策，寻找破局的对岸。"
-      }
-    }
-  },
+  "repository": "https://github.com/wuhuachao-maker/xiangwai-zhidao",
   "keywords": [
     "laowu",
     "老吴",
@@ -31,7 +17,20 @@
     "strategy",
     "research"
   ],
-  "name": "xiangwai-zhidao",
-  "repository": "https://github.com/wuhuachao-maker/xiangwai-zhidao",
-  "version": "0.1.1"
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "【老吴】象外之道",
+        "shortDescription": "老吴原创认知决策引擎：定果、观局、寻根、定策，寻找破局的对岸。",
+        "longDescription": "以老吴原创《象外之道》为统一认知体系，通过定果、观局、寻根、定策，结合生态法则与探岸法，为商业、职业、组织和个人决策寻找隐藏条件与可执行行动。外部人物思想和案例仅作验证资料。",
+        "developerName": "老吴",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "用象外之道帮我分析当前最重要的卡点，并给出下一步行动。",
+          "我面临两个选择，按定果、观局、寻根、定策帮我判断。",
+          "帮我寻找这个商业问题尚未看见的对岸，并验证关键假设。"
+        ]
+      }
+    }
+  }
 }
