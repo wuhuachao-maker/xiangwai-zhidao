@@ -1,0 +1,6 @@
+{"id":"M-001","name":"供需错位","trigger_tags":["卖不出去","客户","产品","需求","获客"],"relationship":"供给必须连接真实有效需求及可承受的交换条件","possible_opposite":"需求方的真实问题、付费理由和进入路径","boundary":"需求可见不等于愿意付费；需考察购买力与竞争替代","evidence_status":"provisional"}
+{"id":"M-002","name":"目标替代","trigger_tags":["播放量","流量","粉丝","业绩","指标"],"relationship":"中间指标不必然等于最终目标","possible_opposite":"对最终结果真正有贡献的关键环节","boundary":"中间指标仍可用于诊断，不宜忽略","evidence_status":"provisional"}
+{"id":"M-003","name":"瓶颈互根","trigger_tags":["卡点","效率","转化","流程","瓶颈"],"relationship":"整体结果往往受连续流程中的约束环节影响","possible_opposite":"未充分发挥作用的必要条件","boundary":"无法仅凭一个低指标推断唯一原因","evidence_status":"provisional"}
+{"id":"M-004","name":"生态位错位","trigger_tags":["竞争","生态位","同行","差异化","强敌"],"relationship":"自身能力的价值依赖于具体生态中的未满足需求和回报机制","possible_opposite":"他人不足以服务的细分需求及互补关系","boundary":"边缘需求未必有足够市场规模","evidence_status":"provisional"}
+{"id":"M-005","name":"协作交付平衡","trigger_tags":["合作","交付","配合","陪跑","顾问"],"relationship":"服务承诺与客户参与能力、供应商资源、合同范围必须可履约地匹配","possible_opposite":"责任边界、专业协作机制及服务深度","boundary":"不能把客户高期待直接当成高支付意愿","evidence_status":"provisional"}
+{"id":"M-006","name":"风险与冗余","trigger_tags":["风险","环境","变化","现金流","周期","生存"],"relationship":"极致效率与应对冲击所需缓冲资源存在动态取舍","possible_opposite":"流动性、备用渠道、可迁移能力","boundary":"冗余也带来成本，不能无限扩大","evidence_status":"provisional"}
