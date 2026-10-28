@@ -2,7 +2,7 @@
 
 一个以老吴原创《象外之道》为统一认知框架的 AI 决策 Skill：**定果 → 观局 → 寻根 → 定策**。
 
-**状态：v0.1.1 技能基础包，已包含工作流、知识库标准、演示数据、检索辅助脚本及自动校验；尚未完成大规模真实人物/案例采集，也未发布成 ChatGPT 插件。**
+**状态：v0.1.2 技能基础包，已包含工作流、知识库标准、演示数据、检索辅助脚本及自动校验；尚未完成大规模真实人物/案例采集，也未发布成 ChatGPT 插件。**
 
 ## 设计原则
 - **内核主导，万家为证**：对话结论采用象外之道；马斯克、毛泽东、巴菲特、芒格等外部思想只是案例和证据。
@@ -21,6 +21,7 @@ xiangwai-zhidao/
 │   ├── research.md          # 数据寻岸研究规范
 │   ├── knowledge-architecture.md # 人物/案例库规划
 │   ├── decision-template.md # 决策输出模板
+│   ├── visual-response-template.md # 一图一表＋行动卡
 │   ├── cases-schema.md      # 案例字段规范
 │   └── model-catalog.md     # 候选规律模型
 ├── data/
@@ -42,7 +43,7 @@ xiangwai-zhidao/
 将整个文件夹放在 `.claude/skills/` 下，形成 `.claude/skills/xiangwai-zhidao/SKILL.md`。
 
 ### ChatGPT
-当前文档格式符合官方通用 Agent Skills 基础结构。**Skill 与可安装的 ChatGPT 插件不是同一个分发包**：在支持 standalone skills 的客户端按产品说明安装；若面向 ChatGPT Chat/Work 发布，需要另行按照该平台当时的插件规范打包与配置。
+当前文档格式符合通用 Agent Skills 基础结构。**Skill 与可安装的 ChatGPT 插件不是同一个分发包**：在支持 standalone skills 的客户端按产品说明安装；若面向 ChatGPT Chat/Work 发布，需要另行按照该平台当时的插件规范打包与配置。
 
 GitHub 只是代码与知识库的版本仓库，**不会自动使 Skill 在所有客户端可用**，也不会自动运行数据更新。
 
